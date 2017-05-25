@@ -1,20 +1,6 @@
-/*html {
-  background-image: url("../images/fondo1.jpg");
-}*/
-/** {
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid black;
-}*/
-
 body {
   font-family: 'Allerta', sans-serif;
   background-image: url('../images/vmina1.jpg');
-}
-
-.header {
-  background-color: white;
-  position: relative;
 }
 
 .titulo {
@@ -57,9 +43,4 @@ body {
 
 .logotipo {
   display: inline-block;
-}
-
-.departamento {
-    background: white;
-    display: block;
 }
