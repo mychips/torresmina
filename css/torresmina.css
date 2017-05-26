@@ -46,8 +46,17 @@ body {
   display: inline-block;
 }
 
+.departamentos{
+  background: black;
+  margin: 0;
+}
+
+.contenedor-departamento{
+  color: white;
+}
 .footer {
   background: #273b47;
+  margin: 0;
 }
 
 .contacto {
@@ -73,7 +82,8 @@ body {
 
 .footer .contenedor {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .formulario {
