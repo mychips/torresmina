@@ -34,8 +34,10 @@ nav a{
 .portada .button{
   background:rgba(255, 255, 255, 0.1);
   position: relative;
-  width: 100%;
-  height: 100%;
+  transform: translate(150%, 300%);
+  width: 25%;
+  height: 10%;
+  padding-left: 30px;
   border-radius: 10px;
   font-size: 50px;
   font-weight: 800;
@@ -43,7 +45,7 @@ nav a{
 }
 
 .button:active{
-  transition: 1s; 
+  transition: 1s;
   transform: scale(.8);
 }
 
