@@ -34,14 +34,12 @@ nav a{
 .portada .button{
   background:rgba(255, 255, 255, 0.1);
   position: relative;
-  transform: translate(150%, 300%);
-  width: 25%;
-  height: 10%;
-  padding-left: 30px;
+  margin: auto auto;
+  /*padding-left: 10px;*/
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 800;
-  transition: 5s;
+  transition: 2s;
 }
 
 .button:active{
@@ -54,13 +52,14 @@ nav a{
 }
 
 .footer {
-  background: #273b47;
+  background: #2D2C2A;
+  /*background: #273b47;*/
 }
 
 .contacto {
   display: flex;
   width: 300px;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   align-items: center;
 }
 
@@ -81,7 +80,7 @@ nav a{
 
 .footer .contenedor {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
 }
 
 
@@ -99,7 +98,7 @@ nav a{
 }
 
 .col1 {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .col2 {
   align-items: flex-start;
@@ -112,7 +111,6 @@ nav a{
 .formulario label, .sexo, .intereses {
   margin-bottom: 10px;
 }
-
 
 .sexo {
   margin-top: 10px;
