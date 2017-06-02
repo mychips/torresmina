@@ -31,11 +31,12 @@ nav a{
   display:grid;
 }
 
-.portada .button{
+.button{
+  text-decoration: none;
+  color: black;
   background:rgba(255, 255, 255, 0.1);
   position: relative;
   margin: auto auto;
-  /*padding-left: 10px;*/
   border-radius: 10px;
   font-size: 45px;
   font-weight: 800;
@@ -47,9 +48,10 @@ nav a{
   transform: scale(.8);
 }
 
-.portada .button:hover{
-  background: #b3e5fc;
+.button:hover{
+  background: #E65100;
 }
+
 
 .footer {
   background: #2D2C2A;
@@ -58,7 +60,7 @@ nav a{
 
 .contacto {
   display: flex;
-  width: 300px;
+  width: 350px;
   flex-wrap:wrap;
   align-items: center;
 }
@@ -77,20 +79,17 @@ nav a{
   margin: 10px 10px 10px 0;
 }
 
-
 .footer .contenedor {
   display: flex;
   justify-content:space-around;
 }
 
-
 .formulario {
   display: flex;
-  width: 400px;
+  width: 470px;
   color: white;
   padding: 50px 10px;
 }
-
 
 .col1, .col2 {
   display: flex;
@@ -98,10 +97,14 @@ nav a{
 }
 
 .col1 {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .col2 {
   align-items: flex-start;
+}
+
+.col2 .button{
+  font-size: 20px;
 }
 
 .intereses label {
@@ -109,15 +112,19 @@ nav a{
 }
 
 .formulario label, .sexo, .intereses {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+
 }
 
 .sexo {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
+.button{
 
-table {
+}
+
+/*table {
   width: 100%;
 }
 
@@ -138,4 +145,4 @@ td {
 table, td, th {
   border: 1px solid #273b47;
   border-collapse: collapse;
-}
+}*/
