@@ -126,7 +126,10 @@ nav a{
 @media screen and (max-width: 800px){
   .portada{
     background-size: contain;
-    height: 363px;
+    height: 320px;
+  }
 
+  .contacto{
+    width: 200px;
   }
 }
