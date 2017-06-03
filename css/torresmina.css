@@ -24,6 +24,10 @@ nav a{
   text-decoration: none;
 }
 
+.menu{
+  font-size: 30px;
+}
+
 .portada{
   background-image: url('../images/vmina1.jpg');
   background-size: cover;
@@ -123,6 +127,30 @@ nav a{
   margin-top: 20px;
 }
 
+table {
+  width: 60%;
+  margin: 5% auto;
+}
+
+th {
+  background: #273b47;
+  color: white;
+}
+
+th {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
 @media screen and (max-width: 800px){
   .portada{
     background-size: contain;
@@ -131,5 +159,44 @@ nav a{
 
   .contacto{
     width: 200px;
+  }
+
+  .imgfooter{
+    width: 150px;
+    height: 60px;
+  }
+
+
+}
+
+@media screen and (max-width: 650px){
+  header{
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .menu{
+    display: block;
+    position: static;
+    font-size: 15px;
+  }
+
+  .menu ul{
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .portada{
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .portada a{
+    font-size: 30px;
+    font-weight: 600;
   }
 }
