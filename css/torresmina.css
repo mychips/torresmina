@@ -26,9 +26,10 @@ nav a{
 
 .portada{
   background-image: url('../images/vmina1.jpg');
-  width: 100%;
+  background-size: cover;
+  width: auto;
   height: 728px;
-  display:grid;
+  display:flex;
 }
 
 .button{
@@ -37,10 +38,12 @@ nav a{
   background:rgba(255, 255, 255, 0.1);
   position: relative;
   margin: auto auto;
+  padding: 5px;
   border-radius: 10px;
   font-size: 45px;
   font-weight: 800;
   transition: 2s;
+  display: inline-block;
 }
 
 .button:active{
@@ -120,29 +123,10 @@ nav a{
   margin-top: 20px;
 }
 
-.button{
+@media screen and (max-width: 800px){
+  .portada{
+    background-size: contain;
+    height: 363px;
 
+  }
 }
-
-/*table {
-  width: 100%;
-}
-
-th {
-  background: #273b47;
-  color: white;
-}
-
-th {
-  padding: 10px 20px;
-  text-align: left;
-}
-
-td {
-  padding: 20px;
-}
-
-table, td, th {
-  border: 1px solid #273b47;
-  border-collapse: collapse;
-}*/
