@@ -112,6 +112,7 @@ nav a{
 
 .col2 .button{
   font-size: 20px;
+  color: white;
 }
 
 .intereses label {
@@ -165,8 +166,6 @@ table, td, th {
     width: 150px;
     height: 60px;
   }
-
-
 }
 
 @media screen and (max-width: 650px){
@@ -192,6 +191,26 @@ table, td, th {
   .portada{
     background-size: cover;
   }
+
+  .footer .contenedor{
+    display: block;
+  }
+
+  div {
+    width: auto;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .formulario{
+    display: block;
+  }
+
+  .col1, .col2 {
+    display: inline-block;
+    /*flex-direction: column;*/
+  }
+
 }
 
 @media screen and (max-width: 500px){
