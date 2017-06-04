@@ -62,7 +62,6 @@ nav a{
 
 .footer {
   background: #2D2C2A;
-  /*background: #273b47;*/
 }
 
 .contacto {
@@ -89,6 +88,7 @@ nav a{
 .footer .contenedor {
   display: flex;
   justify-content:space-around;
+  /*position: sticky;*/
 }
 
 .formulario {
@@ -159,13 +159,14 @@ table, td, th {
   }
 
   .contacto{
-    width: 200px;
+    width: 300px;
+    padding: 0;
   }
 
-  .imgfooter{
+  /*.imgfooter{
     width: 150px;
     height: 60px;
-  }
+  }*/
 }
 
 @media screen and (max-width: 650px){
@@ -192,23 +193,37 @@ table, td, th {
     background-size: cover;
   }
 
+
   .footer .contenedor{
     display: block;
+    margin: 0 auto;
   }
 
-  div {
-    width: auto;
-    margin: 0;
-    justify-content: center;
+  div .contacto{
+    display: block;
+    margin: 0 auto;
   }
 
   .formulario{
     display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 300px;
   }
 
-  .col1, .col2 {
-    display: inline-block;
-    /*flex-direction: column;*/
+  .intereses label{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .col1{
+    margin-right: auto;
+  }
+
+  textarea{
+    width: 100%;
   }
 
 }
