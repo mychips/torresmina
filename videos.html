@@ -5,13 +5,15 @@
     <title>Torres Mina - Departamentos Residenciales</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/torresmina.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   </head>
   <body>
     <header id="header" class="header contenedor">
       <figure class="logotipo">
         <img src="images/logotmina.png" width="140" height="60" alt="Torres Mina logotipo"/>
       </figure>
-      <nav class="menu">
+      <span class="burguer-button icon-menu" id="burguer-button"></span>
+      <nav class="menu" id="menu">
         <ul>
           <li>
             <a href="index.html">Inicio</a>
@@ -36,7 +38,7 @@
     <footer class="footer">
         <div class="contenedor">
           <div id="contacto" class="contacto">
-            <img class="imgfooter" src="images/logotmina.png" width="300" height="120" alt="logotipo footer"/>
+            <img src="images/logotmina.png" width="300" height="120" alt="logotipo footer"/>
             <a href="tel:+529931978082"><strong>Telefono</strong> <span>9931978082</span></a>
             <a href="mailto:contacto@torresmina.com"><strong>E-mail</strong> <span>erick.sarmiento@mychipsolutions.com</span></a>
           </div>
@@ -45,5 +47,32 @@
           </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
+    <script>
+      var consulta = window.matchMedia('(max-width: 500px)');
+      consulta.addListener(mediaQuery);
+
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
+      function toggleMenu(){
+        $menu.classList.toggle('active')
+      };
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          console.log('se cumplió la condicion');
+          $burguerButton.addEventListener('touchstart', toggleMenu);
+        } else {
+          $burguerButton.removeEventListener('touchstart', toggleMenu);
+          console.log('no se cumplió la condicion');
+        }
+      }
+      mediaQuery();
+
+      // lazy loading
+      var bLazy = new Blazy({
+          selector: 'img'
+      });
+    </script>
   </body>
 </html>
