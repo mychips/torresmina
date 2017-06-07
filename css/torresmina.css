@@ -67,12 +67,13 @@ nav a{
 .contacto {
   display: flex;
   margin: auto;
-  width: 350px;
+  width: 450px;
   flex-wrap:wrap;
   align-items: center;
 }
 
 .contacto img {
+  width: 400px;
   display: block;
 }
 
