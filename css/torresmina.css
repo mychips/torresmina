@@ -101,6 +101,13 @@ table, td, th {
   display:flex;
 }
 
+.frame {
+position: relative;
+width: auto;
+padding: 10px;
+overflow: hidden;
+}
+
 .button{
   text-decoration: none;
   color: black;
@@ -123,9 +130,7 @@ table, td, th {
 .button:hover{
   background: #E65100;
 }
-.frame{
-  padding: 10px 10px 10px 10px;
-}
+
 .footer {
   background: #2D2C2A;
 }
@@ -183,13 +188,21 @@ table, td, th {
 
 @media screen and (max-width: 800px){
   .portada{
-    background-size: contain;
-    height: 320px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .frame iframe {
+    width: 100%;
   }
 
   .contacto{
     width: 300px;
     padding: 0;
+  }
+
+  .contacto img{
+    width: auto;
   }
 }
 
@@ -213,10 +226,6 @@ table, td, th {
     justify-content: center;
   }
 
-  .portada{
-    background-size: cover;
-  }
-
   .footer .contenedor{
     display: block;
     margin: 0 auto;
@@ -227,9 +236,9 @@ table, td, th {
     margin: 0 auto;
   }
 
-  .col1{
+  /*.col1{
     margin-right: auto;
-  }
+  }*/
 }
 
 @media screen and (max-width: 500px){
@@ -276,27 +285,6 @@ table, td, th {
   .menu li:first-child {
     border-top: 1px solid white;
   }
-  .portada {
-    text-align: center;
-  }
-  .titulo {
-    font-size: 30px;
-  }
-
-  .title {
-    font-size: 16px
-  }
-  /* portada */
-
-  /* guitarras */
-  .guitarra img {
-    width: 200px;
-    /*height: auto;*/
-  }
-  .title-b {
-    font-size: 30px;
-  }
-  /* guitarras */
 }
 
 

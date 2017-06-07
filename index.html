@@ -41,7 +41,7 @@
     <footer class="footer">
         <div class="contenedor">
           <div id="contacto" class="contacto">
-            <img class="imgfooter" src="images/logotmina.png" width="300" height="120" alt="logotipo footer"/>
+            <img data-src="images/logotmina.png" width="300" height="120" alt="logotipo footer"/>
             <a href="tel:+529931978082"><strong>Telefono</strong> <span>9931978082</span></a>
             <a href="mailto:contacto@torresmina.com"><strong>E-mail</strong> <span>erick.sarmiento@mychipsolutions.com</span></a>
           </div>
@@ -63,12 +63,10 @@
 
         function mediaQuery() {
           if (consulta.matches) {
-            // si se cumple hagamos esto
             console.log('se cumplió la condicion');
             $burguerButton.addEventListener('touchstart', toggleMenu);
           } else {
             $burguerButton.removeEventListener('touchstart', toggleMenu);
-            // si no se cumple hagamos esto
             console.log('no se cumplió la condicion');
           }
         }
@@ -78,11 +76,6 @@
         var bLazy = new Blazy({
             selector: 'img'
         });
-        // $burguerButton.addEventListener('touchstart', toggleMenu);
-
-        // function toggleMenu(){
-        //   $menu.classList.toggle('active')
-        // };
       </script>
   </body>
 </html>
