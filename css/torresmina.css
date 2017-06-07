@@ -15,13 +15,38 @@ header{
 nav ul{
   display: flex;
 }
+
 nav li{
   list-style: none;
   margin: 10px;
 }
+
 nav a{
   color: white;
   text-decoration: none;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+}
+
+th {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
 }
 
 .menu{
@@ -59,7 +84,9 @@ nav a{
 .button:hover{
   background: #E65100;
 }
-
+.frame{
+  padding: 10px 10px 10px 10px;
+}
 .footer {
   background: #2D2C2A;
 }
