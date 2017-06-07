@@ -33,6 +33,7 @@ nav a{
   background-size: cover;
   width: auto;
   height: 728px;
+  min-height: 100vh;
   display:flex;
 }
 
@@ -44,7 +45,7 @@ nav a{
   margin: auto auto;
   padding: 5px;
   border-radius: 10px;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 800;
   transition: 2s;
   display: inline-block;
@@ -59,13 +60,13 @@ nav a{
   background: #E65100;
 }
 
-
 .footer {
   background: #2D2C2A;
 }
 
 .contacto {
   display: flex;
+  margin: auto;
   width: 350px;
   flex-wrap:wrap;
   align-items: center;
@@ -87,69 +88,15 @@ nav a{
 
 .footer .contenedor {
   display: flex;
-  justify-content:space-around;
-  /*position: sticky;*/
+  justify-content:space-between;
 }
 
-.formulario {
+.contenedor .formulario{
   display: flex;
-  width: 470px;
-  color: white;
-  padding: 50px 10px;
-}
-
-.col1, .col2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.col1 {
-  margin-right: 20px;
-}
-.col2 {
-  align-items: flex-start;
-}
-
-.col2 .button{
+  margin: auto;
+  padding: 0;
   font-size: 20px;
   color: white;
-}
-
-.intereses label {
-  font-size: 12px;
-}
-
-.formulario label, .sexo, .intereses {
-  margin-bottom: 5px;
-
-}
-
-.sexo {
-  margin-top: 20px;
-}
-
-table {
-  width: 60%;
-  margin: 5% auto;
-}
-
-th {
-  background: #273b47;
-  color: white;
-}
-
-th {
-  padding: 10px 20px;
-  text-align: left;
-}
-
-td {
-  padding: 20px;
-}
-
-table, td, th {
-  border: 1px solid #273b47;
-  border-collapse: collapse;
 }
 
 @media screen and (max-width: 800px){
@@ -162,11 +109,6 @@ table, td, th {
     width: 300px;
     padding: 0;
   }
-
-  /*.imgfooter{
-    width: 150px;
-    height: 60px;
-  }*/
 }
 
 @media screen and (max-width: 650px){
@@ -193,7 +135,6 @@ table, td, th {
     background-size: cover;
   }
 
-
   .footer .contenedor{
     display: block;
     margin: 0 auto;
@@ -204,28 +145,9 @@ table, td, th {
     margin: 0 auto;
   }
 
-  .formulario{
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    width: 300px;
-  }
-
-  .intereses label{
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    margin-right: 0;
-  }
-
   .col1{
     margin-right: auto;
   }
-
-  textarea{
-    width: 100%;
-  }
-
 }
 
 @media screen and (max-width: 500px){
