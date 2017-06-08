@@ -22,7 +22,7 @@
             <a href="precios.html">Precios</a>
           </li>
           <li>
-            <a href="videos.html">Videos</a>
+            <a href="videos.html">Galeria</a>
           </li>
           <li>
             <a href="http://eepurl.com/cRFH4j">Contacto</a>
@@ -50,6 +50,7 @@
           </div>
         </div>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
       <script>
         var consulta = window.matchMedia('(max-width: 500px)');
@@ -60,13 +61,18 @@
         function toggleMenu(){
           $menu.classList.toggle('active')
         };
-
+        function showMenu(){
+          $menu.classList.add('active')
+        };
+        function hideMenu(){
+          $menu.classList.remove('active')
+        };
         function mediaQuery() {
           if (consulta.matches) {
             console.log('se cumplió la condicion');
-            $burguerButton.addEventListener('touchstart', toggleMenu);
+            $burguerButton.addEventListener('touchstart', showMenu);
           } else {
-            $burguerButton.removeEventListener('touchstart', toggleMenu);
+            $burguerButton.removeEventListener('touchstart', hideMenu);
             console.log('no se cumplió la condicion');
           }
         }
@@ -76,6 +82,12 @@
         var bLazy = new Blazy({
             selector: 'img'
         });
+
+        //gestos touch
+        var $body = document.body;
+        var gestos = new Hammer($body, myOptions);
+          gestos.on('swipeleft', toggleMenu);
+          gestos.on('swiperight', toggleMenu);
       </script>
   </body>
 </html>
