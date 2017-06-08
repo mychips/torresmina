@@ -52,6 +52,12 @@ header{
   margin-bottom: 3px;
 }
 
+h1{
+  position:relative;
+  display: block;
+  width: 100%;
+}
+
 nav ul{
   display: flex;
 }
@@ -268,14 +274,19 @@ div .button{
     background-image: url('../images/fondo3.jpg');
   }
   .portada{
+    margin: 10px;
     background-size:contain;
     height: 10px;
-    min-height: 60vh;
+    min-height: 55vh;
   }
 
   .portada a{
     font-size: 30px;
     font-weight: 600;
+  }
+
+  .frame{
+    margin: 10px;
   }
 
   /*.portada .contenedor {
