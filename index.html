@@ -70,9 +70,9 @@
         function mediaQuery() {
           if (consulta.matches) {
             console.log('se cumplió la condicion');
-            $burguerButton.addEventListener('touchstart', showMenu);
+            $burguerButton.addEventListener('touchstart', toggleMenu);
           } else {
-            $burguerButton.removeEventListener('touchstart', hideMenu);
+            $burguerButton.removeEventListener('touchstart', toggleMenu);
             console.log('no se cumplió la condicion');
           }
         }
@@ -86,8 +86,8 @@
         //gestos touch
         var $body = document.body;
         var gestos = new Hammer($body, myOptions);
-          gestos.on('swipeleft', toggleMenu);
-          gestos.on('swiperight', toggleMenu);
+          gestos.on('swipeleft', showMenu);
+          gestos.on('swiperight', hideMenu);
       </script>
   </body>
 </html>
