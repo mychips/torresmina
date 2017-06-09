@@ -296,7 +296,7 @@ div .button{
     z-index: 2;
     bottom: 0;
     right: 0;
-    display: block;
+    display: flex;
     width: 100%;
     align-items: center;
     transition: .3s;
