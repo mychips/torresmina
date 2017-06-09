@@ -53,11 +53,11 @@ header{
   margin-bottom: 3px;
 }
 
-h1{
+/*h1{
   position:relative;
   margin: 0;
   flex: 0;
-}
+}*/
 
 nav ul{
   display: flex;
@@ -139,6 +139,10 @@ table{
   background: #E65100;
 }
 
+.tmaps{
+  display: block;
+  text-align: center;
+}
 .footer {
   background: black;
 }
