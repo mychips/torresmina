@@ -83,7 +83,12 @@
       function toggleMenu(){
         $menu.classList.toggle('active')
       };
-
+      function showMenu(){
+        $menu.classList.add('active')
+      };
+      function hideMenu(){
+        $menu.classList.remove('active')
+      };
       function mediaQuery() {
         if (consulta.matches) {
           console.log('se cumplió la condicion');

@@ -288,10 +288,6 @@ div .button{
     margin: 10px;
   }
 
-  /*.portada .contenedor {
-    position: static;
-  }*/
-
   .menu {
     background: rgba(0, 0, 0, .8);
     position: absolute;
@@ -300,7 +296,7 @@ div .button{
     z-index: 2;
     bottom: 0;
     right: 0;
-    display: flex;
+    display: block;
     width: 100%;
     align-items: center;
     transition: .3s;
