@@ -38,6 +38,7 @@
 }
 
 body{
+  position: relative;
   margin: 0;
   top: 0;
   font-family: 'Open Sans', sans-serif;
@@ -54,8 +55,7 @@ header{
 
 h1{
   position:relative;
-  display: block;
-  width: 100%;
+  margin: 0;
 }
 
 nav ul{
@@ -112,6 +112,7 @@ table{
   position: relative;
   width: auto;
   overflow: hidden;
+  margin-left: 10px;
 }
 
 .button{
@@ -270,9 +271,6 @@ div .button{
 }
 
 @media screen and (max-width: 500px){
-  html{
-    background-image: url('../images/fondo3.jpg');
-  }
   .portada{
     margin: 10px;
     background-size:contain;
@@ -285,7 +283,8 @@ div .button{
     font-weight: 600;
   }
 
-  .frame{
+  .videoy {
+    height:80%;
     margin: 10px;
   }
 
@@ -318,6 +317,6 @@ div .button{
     display: block;
     background: white;
     left: 20px;
-    top: 30px;
+    top: 15px;
   }
 }
