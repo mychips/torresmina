@@ -99,6 +99,11 @@
       var bLazy = new Blazy({
           selector: 'img'
       });
+
+      var $body = document.body;
+      var gestos = new Hammer($body);
+        gestos.on('swiperight', showMenu);
+        gestos.on('swipeleft', hideMenu);
     </script>
   </body>
 </html>
