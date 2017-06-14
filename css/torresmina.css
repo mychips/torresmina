@@ -127,7 +127,7 @@ table{
 
 #slider-arrows {
     margin: -10% auto 0 auto;
-    width: 80%;
+    width: 100%;
 }
 
 #slider-box {
@@ -186,7 +186,7 @@ table{
 #element1:checked ~ #slider-arrows label:nth-child(2):before,
 #element2:checked ~ #slider-arrows label:nth-child(3):before,
 #element3:checked ~ #slider-arrows label:nth-child(1):before {
-    color: black  ;
+    color: white;  ;
     content: "\f054";
     font-family: FontAwesome;
     font-style: normal;
@@ -199,7 +199,7 @@ table{
 #element1:checked ~ #slider-arrows label:nth-child(3):before,
 #element2:checked ~ #slider-arrows label:nth-child(1):before,
 #element3:checked ~ #slider-arrows label:nth-child(2):before {
-    color: black  ;
+    color: white;
     content: "\f053";
     font-family: FontAwesome;
     font-style: normal;
